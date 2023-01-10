@@ -1,32 +1,83 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [movies, setMovies] = useState([
+    {
+      "Title": "Transformers",
+      "Year": "2007",
+      "imdbID": "tt0418279",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDg1NTU2OWEtM2UzYi00ZWRmLWEwMTktZWNjYWQ1NWM1OThjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Transformers: Dark of the Moon",
+        "Year": "2011",
+        "imdbID": "tt1399103",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTkwOTY0MTc1NV5BMl5BanBnXkFtZTcwMDQwNjA2NQ@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Transformers: Revenge of the Fallen",
+        "Year": "2009",
+        "imdbID": "tt1055369",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNjk4OTczOTk0NF5BMl5BanBnXkFtZTcwNjQ0NzMzMw@@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Transformers: Age of Extinction",
+        "Year": "2014",
+        "imdbID": "tt2109248",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjEwNTg1MTA5Nl5BMl5BanBnXkFtZTgwOTg2OTM4MTE@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Transformers: The Last Knight",
+        "Year": "2017",
+        "imdbID": "tt3371366",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BN2YwOWM4ODgtZTMzMi00ZmFmLTk5NTEtNmY4ZDcwNzQxNDhjXkEyXkFqcGdeQXVyNTI0NzAyNjY@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Transformers: The Movie",
+        "Year": "1986",
+        "imdbID": "tt0092106",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BZGM1MGY4OTYtOGZkOC00NjYyLTk3OTMtODUyZDdhYWQ3NGFjXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg"
+    },
+    {
+        "Title": "The Transformers",
+        "Year": "1984–1987",
+        "imdbID": "tt0086817",
+        "Type": "series",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYjZkN2E5MDMtM2U1ZS00MGE2LTg1NzktYzZhYmVkNmJkYTk2XkEyXkFqcGdeQXVyNjExODE1MDc@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Beast Wars: Transformers",
+        "Year": "1996–1999",
+        "imdbID": "tt0115108",
+        "Type": "series",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNDUxODg4MzE5NV5BMl5BanBnXkFtZTYwNDA0OTc4._V1_SX300.jpg"
+    },
+    {
+        "Title": "Transformers Prime",
+        "Year": "2010–2013",
+        "imdbID": "tt1659175",
+        "Type": "series",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMGY0ZGMwY2QtMGUwOC00MmVhLTljMzktNGYzNDFmYzAzODMwXkEyXkFqcGdeQXVyODk1MjAxNzQ@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Transformers: War for Cybertron Trilogy",
+        "Year": "2020–2021",
+        "imdbID": "tt9789660",
+        "Type": "series",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNzRkNjllZjktZTkwZC00YTgxLTlmMWEtZWYzYzUwODQ0NzZiXkEyXkFqcGdeQXVyMjQ3MjU3NTU@._V1_SX300.jpg"
+    }
+  ])
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </div>
   )
 }
