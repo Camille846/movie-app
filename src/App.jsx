@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import MovieList from './components/MovieList'
 
 function App() {
   const [movies, setMovies] = useState([
@@ -77,7 +78,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <MovieList movies={movies} />
     </div>
   )
 }
