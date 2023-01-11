@@ -37,3 +37,31 @@ body{
     color: var(--white);
     background-color: rgba(231, 230, 230, 0.863);
 }
+
+/* overlay "Add to favorite" */
+
+.image-container{
+    position: relative;
+    transition: transform .2s;
+}
+
+.image-container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.image-container:hover .overlay{
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    min-width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    font-size: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+}
